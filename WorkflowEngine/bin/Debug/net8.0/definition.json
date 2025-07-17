@@ -1,0 +1,13 @@
+{
+  "id": "11111111-1111-1111-1111-111111111111",
+  "name": "Leave Request",
+  "states": [
+    { "id": "s-submitted", "name": "Submitted", "isInitial": true },
+    { "id": "s-approved",  "name": "Approved",  "isFinal": true },
+    { "id": "s-rejected",  "name": "Rejected",  "isFinal": true }
+  ],
+  "actions": [
+    { "id": "a-approve", "name": "Approve", "fromStates": ["s-submitted"], "toState": "s-approved" },
+    { "id": "a-reject",  "name": "Reject",  "fromStates": ["s-submitted"], "toState": "s-rejected" }
+  ]
+}
